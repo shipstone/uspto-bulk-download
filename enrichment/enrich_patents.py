@@ -18,6 +18,8 @@ import sys
 # Add parent directory to path for imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from enrichment import uspto_download
+
 # Configuration
 DEFAULT_TEMPLATE = "examples/IPTLpatents-template.json"
 DEFAULT_OUTPUT = "examples/IPTLpatents-enriched.json"
@@ -123,14 +125,39 @@ def main():
     print(f"Found {len(patent_numbers)} patents in template:")
     for num in patent_numbers:
         print(f"  - {num}")
+    print()
     
-    # TODO: Phase 2 - Download USPTO files
+    # Phase 2: Download USPTO files
+    if not args.scrape_only:
+        if not args.api_key:
+            print(f"Error: USPTO API key required. Set {USPTO_API_KEY_ENV} or use --api-key")
+            return 1
+        
+        print("Phase 2: Downloading USPTO PTGRXML files...")
+        patent_to_file = uspto_download.download_all_required(
+            patent_numbers, 
+            args.api_key, 
+            args.downloads_dir,
+            verbose=args.verbose
+        )
+        
+        found, missing = uspto_download.verify_downloads(patent_numbers, args.downloads_dir)
+        print(f"\nDownload summary: {len(found)} found, {len(missing)} missing")
+        if missing:
+            print(f"Missing patents: {missing}")
+            if not args.download_only:
+                return 1
+        
+        if args.download_only:
+            print("\n--download-only specified, stopping here.")
+            return 0
+    
     # TODO: Phase 3-4 - Parse USPTO XML
     # TODO: Phase 5-6 - Scrape Google Patents
     # TODO: Phase 7 - Generate output JSON
     
     print()
-    print("Enrichment complete (stub - phases not yet implemented)")
+    print("Enrichment complete (remaining phases not yet implemented)")
     return 0
 
 
