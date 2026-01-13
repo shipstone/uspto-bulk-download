@@ -248,19 +248,58 @@ def extract_patent_data(zip_path: str, patent_number: str) -> Optional[Dict]:
     return parse_patent_xml(xml_string)
 
 
+def extract_all_patents(patent_to_file: Dict[str, str], verbose: bool = False) -> Dict[str, Dict]:
+    """
+    Extract data for all patents from their respective ZIP files.
+    
+    Args:
+        patent_to_file: Dict mapping patent number to ZIP file path
+        verbose: Print progress
+        
+    Returns:
+        Dict mapping patent number to extracted data
+    """
+    results = {}
+    
+    for patent_num, zip_path in patent_to_file.items():
+        if verbose:
+            print(f"  Extracting {patent_num} from {os.path.basename(zip_path)}...")
+        
+        data = extract_patent_data(zip_path, patent_num)
+        if data:
+            data['number'] = patent_num  # Include the patent number
+            results[patent_num] = data
+        else:
+            print(f"  WARNING: Failed to extract {patent_num}")
+    
+    return results
+
+
 if __name__ == "__main__":
-    # Test with US9391881B2
+    # Test with all patents
     import json
+    import sys
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from enrichment.uspto_download import PATENT_GRANT_DATES, grant_date_to_weekly_filename
     
-    test_patent = "US9391881B2"
-    test_zip = "downloads/ipg160712.zip"
+    downloads_dir = "downloads"
     
-    print(f"Testing extraction of {test_patent} from {test_zip}")
+    # Build patent to file mapping
+    patent_to_file = {}
+    for patent_num, grant_date in PATENT_GRANT_DATES.items():
+        filename = grant_date_to_weekly_filename(grant_date)
+        patent_to_file[patent_num] = os.path.join(downloads_dir, filename)
+    
+    print(f"Extracting {len(patent_to_file)} patents from USPTO XML files")
     print("=" * 60)
     
-    data = extract_patent_data(test_zip, test_patent)
+    results = extract_all_patents(patent_to_file, verbose=True)
     
-    if data:
-        print(json.dumps(data, indent=2))
-    else:
-        print("Failed to extract patent data")
+    print()
+    print("=" * 60)
+    print(f"SUMMARY: Extracted {len(results)}/{len(patent_to_file)} patents")
+    print()
+    
+    for patent_num, data in results.items():
+        claim_count = len(data.get('independent_claims', []))
+        print(f"  {patent_num}: {data.get('title', 'NO TITLE')[:50]}... ({claim_count} claims)")
