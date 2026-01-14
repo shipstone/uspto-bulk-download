@@ -150,12 +150,33 @@ def parse_patent_xml(xml_string: str) -> Dict:
         if d and len(d) == 8:
             filing_date = f"{d[:4]}-{d[4:6]}-{d[6:8]}"
     
-    # Priority date - check provisional applications first
+    # Priority date - check multiple sources for earliest date
+    priority_dates = []
+    
+    # Check provisional applications
     prov_date = root.find('.//us-provisional-application/document-id/date')
-    if prov_date is not None:
+    if prov_date is not None and prov_date.text:
         d = prov_date.text
-        if d and len(d) == 8:
-            result['priority_date'] = f"{d[:4]}-{d[4:6]}-{d[6:8]}"
+        if len(d) == 8:
+            priority_dates.append(f"{d[:4]}-{d[4:6]}-{d[6:8]}")
+    
+    # Check parent documents (continuations, CIPs, divisionals)
+    for parent_doc in root.findall('.//us-related-documents//parent-doc/document-id/date'):
+        if parent_doc.text:
+            d = parent_doc.text
+            if len(d) == 8:
+                priority_dates.append(f"{d[:4]}-{d[4:6]}-{d[6:8]}")
+    
+    # Check priority-claims (foreign priority)
+    for prio_claim in root.findall('.//priority-claims/priority-claim/date'):
+        if prio_claim.text:
+            d = prio_claim.text
+            if len(d) == 8:
+                priority_dates.append(f"{d[:4]}-{d[4:6]}-{d[6:8]}")
+    
+    # Use earliest priority date found, or fall back to filing date
+    if priority_dates:
+        result['priority_date'] = min(priority_dates)
     elif filing_date:
         result['priority_date'] = filing_date
     

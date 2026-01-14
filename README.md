@@ -197,6 +197,66 @@ optional arguments:
 
 MIT License - See LICENSE file
 
+## Patent Enrichment Tool
+
+In addition to bulk downloads, this repository includes a patent enrichment tool that populates patent portfolio JSON files with data from USPTO bulk files and Google Patents.
+
+### Features
+
+- Extracts patent data from USPTO PTGRXML bulk files (title, abstract, claims, dates)
+- Scrapes Google Patents for enrichment data (citations, family members, expiration)
+- Generates complete patent portfolio JSON files
+
+### Usage
+
+```bash
+# Full enrichment (downloads USPTO files, scrapes Google Patents)
+python3 enrichment/enrich_patents.py -t template.json -o enriched.json -k YOUR_API_KEY
+
+# Skip downloads if files already exist
+python3 enrichment/enrich_patents.py -t template.json -o enriched.json
+
+# Skip Google Patents scraping
+python3 enrichment/enrich_patents.py -t template.json -o enriched.json --skip-google
+```
+
+### Template Format
+
+The input template should be a JSON file with patent numbers:
+
+```json
+{
+  "portfolio": {
+    "assignee": null,
+    "patent_count": null,
+    "generated": null
+  },
+  "patents": [
+    { "number": "US9391881B2", ... }
+  ]
+}
+```
+
+See `examples/IPTLpatents-template.json` for a complete example.
+
+### Output Fields
+
+| Field | Source | Description |
+|-------|--------|-------------|
+| title | USPTO XML | Invention title |
+| abstract | USPTO XML | Patent abstract |
+| grant_date | USPTO XML | Date patent was granted |
+| priority_date | USPTO XML | Earliest priority date |
+| application_number | USPTO XML | Application number |
+| assignee_original | USPTO XML | Original assignee |
+| independent_claims | USPTO XML | Independent claims with type |
+| application_family_members | USPTO XML | Related publications |
+| forward_cites | Google Patents | Citation count |
+| top_citing_assignees | Google Patents | Top assignees citing this patent |
+| simple_family_members | Google Patents | Patent family members |
+| expiration | Google Patents | Adjusted expiration date |
+| assignee_current | Google Patents | Current assignee |
+
 ## Links
 
 - [USPTO Open Data Portal](https://data.uspto.gov)

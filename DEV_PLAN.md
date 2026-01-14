@@ -175,14 +175,14 @@ Build a tool to populate the IPTLpatents-template.json with data from:
 
 | Phase | Status | Completed | Notes |
 |-------|--------|-----------|-------|
-| 1 | NOT STARTED | - | |
-| 2 | NOT STARTED | - | |
-| 3 | NOT STARTED | - | |
-| 4 | NOT STARTED | - | |
-| 5 | NOT STARTED | - | |
-| 6 | NOT STARTED | - | |
-| 7 | NOT STARTED | - | |
-| 8 | NOT STARTED | - | |
+| 1 | COMPLETE | 2026-01-14 | Project structure created |
+| 2 | COMPLETE | 2026-01-14 | Downloaded 10 USPTO files |
+| 3 | COMPLETE | 2026-01-14 | XML parser working |
+| 4 | COMPLETE | 2026-01-14 | All 11 patents extracted |
+| 5 | COMPLETE | 2026-01-14 | Google scraper working |
+| 6 | COMPLETE | 2026-01-14 | All patents scraped |
+| 7 | COMPLETE | 2026-01-14 | JSON output generated |
+| 8 | COMPLETE | 2026-01-14 | Validation done, tool finalized |
 
 ---
 
