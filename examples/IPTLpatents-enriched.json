@@ -1,0 +1,431 @@
+{
+  "portfolio": {
+    "assignee": "IP Technology Labs, LLC",
+    "patent_count": 11,
+    "generated": "2026-01-13"
+  },
+  "patents": [
+    {
+      "number": "US11799690B2",
+      "title": "Systems and methods for automatic network virtualization between heterogeneous networks",
+      "grant_date": "2023-10-24",
+      "priority_date": "2021-02-10",
+      "expiration": "2041-02-20",
+      "application_number": "17/172614",
+      "assignee_original": "IP Technology Labs, LLC",
+      "assignee_current": "IP Technology Labs LLC",
+      "forward_cites": 0,
+      "top_citing_assignees": null,
+      "abstract": "The invention is that of systems and methods for communications between one or more networks and subsequently network devices configured with a networking application for processing network based communications when the devices are on different logical and physical networks. The methods herein involve translation of remote IP addresses of LAN devices to addresses comprising headend network prefixes, to allow for LAN extension of remote to headend networks and communications between devices on the disparate networks. Data packets from a remote LAN interface are transferred to an outbound interface once translated, then forwarded via a formed bridged tunnel link to a headend network device. A server comprising a local LAN and outbound interface is further configured with a NAT module for IP address translation and an optional security module for additional authenticity verification of remote devices attempting to penetrate the headend network.",
+      "independent_claims": [
+        {
+          "number": 1,
+          "type": "system",
+          "text": "1. A system for establishing communications between devices on heterogeneous networks, the system comprising:\na remote network comprising a local network device and a local gateway connected thereto, the local gateway comprising a local area network (LAN) interface and an outbound interface, each in network communication with a network address translation (NAT) module, wherein the NAT module comprises instructions tangibly stored on a nontransitory computer readable medium which when, upon transmission of a data packet from the local network device to the local area network interface, cause a connected microprocessor to translate the Internet Protocol (IP) address of the local area network interface to an IP address of the outbound interface, the IP address of the outbound interface including a first prefix is;\na headend network comprising a headend gateway in network communication with a headend module comprising instructions tangibly stored on a nontransitory computer readable medium which when executed by a connected microprocessor cause the microprocessor to establish a communications path between the outbound interface and a headend gateway of the headend network over a bridged tunnel link, thereby establishing a communications path between the local area network device and a headend network device without using a virtual private network (VPN);\nwherein the headend network includes a second prefix that is distinct from the first prefix; and\nwherein no routers are present within the communications path between the local area network device and the headend network device."
+        },
+        {
+          "number": 4,
+          "type": "method",
+          "text": "4. A method for establishing communications between devices on heterogeneous networks, the method comprising:\nforwarding a data packet from a local network device to an LAN interface;\ntranslating the IP address of the LAN interface to an IP address of an outbound interface, wherein the IP address of the outbound interface comprises a first IP address prefix;\nforwarding the data packet from the LAN interface to a headend gateway of a headend network via a bridged tunnel link, the headend network having a second IP address prefix that is distinct from the first IP address prefix; and\nestablishing a data path between the local network device and a headend network device on the headend network without using a virtual private network (VPN), wherein no routers are present within the communications path between the local area network device and the headend network device."
+        }
+      ],
+      "application_family_members": [
+        "US20220255930A1"
+      ],
+      "simple_family_members": [
+        "US20220255930A1"
+      ]
+    },
+    {
+      "number": "US10659430B2",
+      "title": "Systems and methods for dynamic network address modification related applications",
+      "grant_date": "2020-05-19",
+      "priority_date": "2013-02-20",
+      "expiration": "2034-05-25",
+      "application_number": "15/875921",
+      "assignee_original": "IP Technology Labs, LLC",
+      "assignee_current": "IP Technology Labs LLC",
+      "forward_cites": 14,
+      "top_citing_assignees": [
+        "PALO ALTO NETWORKS, INC. (4)",
+        "AMAZON TECHNOLOGIES, INC. (2)",
+        "ANCHORFREE INC. (2)",
+        "AT&AMP;T INTELLECTUAL PROPERTY I, L.P. (2)",
+        "CISCO TECHNOLOGY, INC. (2)",
+        "CITRIX SYSTEMS, INC. (2)",
+        "ELECTRONICS AND TELECOMMUNICATIONS RESEARCH INSTITUTE (2)"
+      ],
+      "abstract": "The invention presented herein is a system and method for automatically discovering communication capabilities for direct communication between endpoints across one or more unknown networks, the system comprising: a plurality of network enabled endpoints configured with a module in wireless communication with a management database, the module configured to establish a communication path for direct communication between the network-enabled endpoints, independent of a NAT router. Also disclosed is a system and method for indirect connectionless bi-directional messaging over an unknown network infrastructure for communicating a message communication between a querying device and a database, wherein communication is enabled without the requirement for direct access to the database for either obtaining or placing information; and where the message communication comprises an unlimited amount of discreet and selectable information elements; and without requiring or issuing a direct acknowledgement of a receipt from the database of the communication message received.",
+      "independent_claims": [
+        {
+          "number": 1,
+          "type": "method",
+          "text": "1. A method for unidirectional transfer of information within a fully qualified domain name (FQDN) over non-native network infrastructures without a predefined network connectivity protocol preconfigured network connection, the method comprising:\npresenting information from a network-enabled device to a module configured to receive information from the network-enabled device, wherein the module comprises instructions tangibly stored on a non-transitory computer-readable medium which when executed by a processor cause the processor to code discreet information elements as host names within an FQDN based on the information received and issue a standard domain name system (DNS) record request comprising the FQDN to an end point selected from the group consisting of all available DNS resolvers for a coded host name fully qualified domain, wherein the FQDN comprises:\na predefined information field corresponding to the network-enabled device; and\na host name coded from the discreet information elements;\nwherein the FQDN is not resolved in response to the DNS record request; and\nwherein the network-enabled device automatically discovers capabilities for communications directly between end points across network infrastructures even if both end points are behind a network address translator (NAT) or firewall."
+        }
+      ],
+      "application_family_members": [
+        "US20190036734A1"
+      ],
+      "simple_family_members": [
+        "US10154005B2",
+        "US10469444B2",
+        "US20140317312A1",
+        "US20160323242A1",
+        "US20180183755A1",
+        "US20190036734A1",
+        "US20190068547A1",
+        "US9391881B2",
+        "US9876757B2"
+      ]
+    },
+    {
+      "number": "US11283790B2",
+      "title": "Agentless identity-based network switching",
+      "grant_date": "2022-03-22",
+      "priority_date": "2019-06-19",
+      "expiration": "2040-11-07",
+      "application_number": "16/904650",
+      "assignee_original": "IP Technology Labs, LLC",
+      "assignee_current": "IP Technology Labs LLC",
+      "forward_cites": 1,
+      "top_citing_assignees": [
+        "\u5317\u4eac\u5929\u878d\u4fe1\u7f51\u7edc\u5b89\u5168\u6280\u672f\u6709\u9650\u516c\u53f8 (2)"
+      ],
+      "abstract": "The invention described herein is that of systems and methods for agentless identity-based authentication of network-enabled devices for control of network traffic to and from each device based on identity. The invention leverages X.509 certificates associated with network devices and comprises at least one querying device in communication with at least target device and optionally at least one intermediate device, such as but not limited to a switching device that can interface with the target device and enable the querying device to query the target device to obtain an X.509 certificate and any extensions, then dictate switching actions, which may be carried out by the querying device according to instructions provided by a switching module residing on the querying device or located external to the querying device. The systems and methods described herein are suitable for validation of the identities of fixed application devices to prevent unauthorized network access.",
+      "independent_claims": [
+        {
+          "number": 1,
+          "type": "system",
+          "text": "1. A system for agentless identity-based network switching of data traffic among network-enabled devices, the system comprising:\na querying device in network communication with a target device, wherein the target device comprises an X.509 certificate identifying the target device; and\na query module, an analysis module and a switching module, each tangibly stored on a non-transitory computer readable medium; wherein\nthe query module comprises instructions which when executed by a processor cause the processor to establish a first data path between the querying device and the target device and obtain the X.509 certificate;\nthe analysis module comprises instructions which when executed by a processor cause the processor to:\nparse the X.509 certificate into individual information elements;\ncompare the individual information elements to a set of reference information elements;\ngenerate an analytical output comprising a validated identity of the target device based on comparison of the individual information elements to the reference information elements; and\ntransmit the analytical output to the switching module; and\nthe switching module comprises instructions which when executed by a processor cause the processor to execute a switching action on the data traffic received by the querying device from the target device over the first data path based on the analytical output;\nwherein the switching action is selected from the group consisting of blocking the target device's access to a network, permitting the target device's access to the network, limiting the target device's access to the network or diverting the target device's access away from the network, local physical switching, logical switching, application of firewall rules, remote logical signaling, and configuring the target device's access to the network."
+        },
+        {
+          "number": 9,
+          "type": "method",
+          "text": "9. A method for agentless identity-based network switching of data traffic between network-enabled devices, the method comprising:\ninitiating from a querying device a request for an X.509 certificate from a target device in network communication with the querying device;\nestablishing via a processor a first data path between the querying device and the target device and requests and obtains the X.509 certificate in response to instructions communicated to the processor from a query module tangibly stored on a non-transitory computer readable medium;\nparsing the X.509 certificate in response to instructions communicated to the processor from an analysis module tangibly stored on a non-transitory computer readable medium into individual information elements and compares the individual information elements to a set of reference information elements to generate an analytical output comprising a validated identity of the target device based on comparison of the individual information elements to the reference information elements;\ntransmitting the analytical output to a switching module tangibly stored on a non-transitory computer readable medium; and\nexecuting a switching action in response to instructions communicated to the processor from the switching module on data traffic received by the querying device from the target device over the first data path based on the analytical output;\nwherein the switching action is selected from the group consisting of blocking the target device's access to a network, permitting the target device's access to the network, limiting the target device's access to the network or diverting the target device's access away from the network, local physical switching, logical switching, application of firewall rules, remote logical signaling, and configuring the target device's access to the network."
+        }
+      ],
+      "application_family_members": [
+        "US20200403987A1"
+      ],
+      "simple_family_members": [
+        "US20200403987A1"
+      ]
+    },
+    {
+      "number": "US11477276B2",
+      "title": "Systems and methods for automated, controllerless and stateless network connection selection based on distributed server information",
+      "grant_date": "2022-10-18",
+      "priority_date": "2021-02-24",
+      "expiration": "2041-02-24",
+      "application_number": "17/183953",
+      "assignee_original": "IP Technology Labs, LLC",
+      "assignee_current": "IP Technology Labs LLC",
+      "forward_cites": 2,
+      "top_citing_assignees": [
+        "IP TECHNOLOGY LABS, LLC (4)"
+      ],
+      "abstract": "The invention is that of systems and methods for controllerless and distributed network connections to servers on a network by remote clients seeking their services. The invention comprises a server database where servers within a server group identified by a groupname may post unique identifiers (UIDs) for retrieval by group clients configured with the groupname, which may query the server database for server connection information such as uptime, downtime, and congestion in order to select a server for a preferential connection based on an overall availability profile as determined by the group client. The methods described herein eliminate a separate controller and thereby eliminate the single point of failure (SPOF) represented by connection controllers and load balancers in a network as are common in the current state of the art. Servers in the server group may periodically refresh their connection details to enable group client to server connections based on dynamic real-time updates, establishing a high-availability server group for the provision of services.",
+      "independent_claims": [
+        {
+          "number": 1,
+          "type": "system",
+          "text": "1. A system for automated, controllerless and stateless network connection selection, the system comprising:\na central database in direct network communication with a plurality of servers in a server group and a plurality of clients in a client group, wherein each server of the plurality of servers comprises a unique identifier;\na server software module tangibly stored on a nontransitory computer readable medium comprising instructions which when executed by a first processor cause the first processor to transmit the unique identifier and server connection information of each server of the plurality of servers to the central database without any modification or adjudication;\nwherein each client of the plurality of clients in the client group is configured with a group name for the server group; and\na client software module comprising instructions which when executed by a second processor cause the second processor to acquire the server connection information;\nwherein the server connection information enables each client of the plurality of clients to establish a preferential direct connection with a server in the server group;\nwherein the central database does not reside on any server of the plurality of servers, and does not perform any modification or adjudication of the server connection information; and\nwherein the server connection information is not modified or adjudicated by any intermediate device in a communication path between any client of the plurality of clients or any server of the plurality of servers and the central database."
+        },
+        {
+          "number": 4,
+          "type": "method",
+          "text": "4. A method for establishing a controllerless connection to a server of a plurality of servers in a server group, the method comprising:\nconfiguring a plurality of clients of a client group with a group name for the server group; and\ncausing a connected processor to execute instructions of a client software module of a client configured with the group name, which when executed by the connected processor cause the connected processor to acquire unmodified and unadjudicated server connection information of one or more selected servers of the plurality of servers for preferential direct connection selection by the client from a central database;\nwherein each server of the plurality of servers is configured with a unique identifier;\nthe central database does not reside on any server of the plurality of servers and does not perform any modification or adjudication of the server connection information; and\nwherein the server connection information is not modified or adjudicated by any intermediate device in a communication path between any client of the plurality of clients or any server of the plurality of servers and the central database."
+        }
+      ],
+      "application_family_members": [
+        "US20220272147A1"
+      ],
+      "simple_family_members": [
+        "US12034799B2",
+        "US12034800B2",
+        "US20220272147A1"
+      ]
+    },
+    {
+      "number": "US10469444B2",
+      "title": "System and method for direct connections between previously unconnected network devices across one or more unknown networks",
+      "grant_date": "2019-11-05",
+      "priority_date": "2013-02-20",
+      "expiration": "2034-05-25",
+      "application_number": "16/170260",
+      "assignee_original": "IP Technology Labs, LLC",
+      "assignee_current": "IP Technology Labs LLC",
+      "forward_cites": 14,
+      "top_citing_assignees": [
+        "PALO ALTO NETWORKS, INC. (4)",
+        "AMAZON TECHNOLOGIES, INC. (2)",
+        "ANCHORFREE INC. (2)",
+        "AT&AMP;T INTELLECTUAL PROPERTY I, L.P. (2)",
+        "CISCO TECHNOLOGY, INC. (2)",
+        "CITRIX SYSTEMS, INC. (2)",
+        "ELECTRONICS AND TELECOMMUNICATIONS RESEARCH INSTITUTE (2)"
+      ],
+      "abstract": "The invention presented herein is a system and method for automatically discovering communication capabilities for direct communication between endpoints across one or more unknown networks, the system comprising: a plurality of network-enabled endpoints configured with a module in wireless communication with a management database, the module configured to establish a communication path for direct communication between the network-enabled endpoints, independent of a NAT router. Also disclosed is a system and method for indirect connectionless bi-directional messaging over an unknown network infrastructure for communicating a message communication between a querying device and a database, wherein communication is enabled without the requirement for direct access to the database for either obtaining or placing information; and where the message communication comprises an unlimited amount of discreet and selectable information elements; and without requiring or issuing a direct acknowledgement of a receipt from the database of the communication message received.",
+      "independent_claims": [
+        {
+          "number": 1,
+          "type": "system",
+          "text": "1. A system configured for automatically discovering communication capabilities for direct communication between endpoints across one or more unconnected networks, the system comprising:\na plurality of network-enabled endpoints, each comprising at least one module and at least one processor, wherein at least one first endpoint is configured to establish network communication with at least one second endpoint in the absence of an intermediary outside the one or more unconnected networks by performing a set of operations comprising;\nassessing the network of the at least one second endpoint to discover behavioral traits of a network address translation device of the at least one second network;\nestablishing direct communication with the at least one second endpoint, causing the at least one second endpoint to establish direct communication with the at least one first endpoint; and\nsending data packets comprising unmodified headers embedded within the contents of the data packets across a range of ports to the at least one second endpoint;\nperforming an iterative operational cycle until establishing a direct connection path between the at least one first and second endpoints, the operation cycle comprising:\ndetermining if one endpoint is using a pubic Internet protocol address or is located in a network that allows a connection to a device on an available port;\na port mapping operation comparing sending a series of data packets, sent from one endpoint in incremental ports upwards and in reverse from another endpoint in incremental ports downwards to determine whether the data packets intersect on a port; and\nsynchronizing the endpoints on a single port, so that the incoming data packets appear to be in response to the outgoing packets, allowing a hand-off to occur between the endpoints."
+        },
+        {
+          "number": 2,
+          "type": "method",
+          "text": "2. A method for automatically discovering communication capabilities for direct communication between endpoints across one or more unconnected networks, the method comprising:\nestablishing network communication between at least one first endpoint and at least one second endpoint in the absence of an intermediary outside the one or more unconnected networks by performing a set of operations comprising;\nassessing the network of the at least one second endpoint to discover behavioral traits of a network address translation device, if present, of the at least one second network;\nestablishing direct communication with the at least one second endpoint, causing the at least one second endpoint to establish direct communication with the at least one first endpoint; and\nsending data packets comprising unmodified headers embedded within the contents of the data packets across a range of ports to the at least one second endpoint;\nperforming an iterative operational cycle until establishing a direct connection path between the at least one first and second endpoints, the operation cycle comprising:\ndetermining if one endpoint is using a pubic Internet protocol address or is located in a network that allows a connection to a device on an available port;\ncomparing sending a series of data packets, sent from one endpoint in incremental ports upwards and in reverse from another endpoint in incremental ports downwards to determine whether the data packets intersect on a port; and\nsynchronizing the endpoints on a single port, so that the incoming data packets appear to be in response to the outgoing packets, allowing a hand-off to occur between the endpoints."
+        }
+      ],
+      "application_family_members": [
+        "US20190068547A1"
+      ],
+      "simple_family_members": [
+        "US10154005B2",
+        "US10659430B2",
+        "US20140317312A1",
+        "US20160323242A1",
+        "US20180183755A1",
+        "US20190036734A1",
+        "US20190068547A1",
+        "US9391881B2",
+        "US9876757B2"
+      ]
+    },
+    {
+      "number": "US9391881B2",
+      "title": "System and methods for dynamic network address modification",
+      "grant_date": "2016-07-12",
+      "priority_date": "2013-02-20",
+      "expiration": "2034-05-25",
+      "application_number": "14/185395",
+      "assignee_original": "IP Technology Labs, LLC",
+      "assignee_current": "IP Technology Labs LLC",
+      "forward_cites": 16,
+      "top_citing_assignees": [
+        "PALO ALTO NETWORKS, INC. (4)",
+        "\u8fc8\u666e\u901a\u4fe1\u6280\u672f\u80a1\u4efd\u6709\u9650\u516c\u53f8 (3)",
+        "AMAZON TECHNOLOGIES, INC. (2)",
+        "ANCHORFREE INC. (2)",
+        "AT&AMP;T INTELLECTUAL PROPERTY I, L.P. (2)",
+        "CISCO TECHNOLOGY, INC. (2)",
+        "CITRIX SYSTEMS, INC. (2)"
+      ],
+      "abstract": "The invention presented herein permits split-routing to occur without any changes, modifications, or configuration of the requesting host, network stacks, network architectures and routing and forwarding behavior. The invention is carried out by way of a Module that intercepts the normal and standard DHCP communication between a requesting device and a DHCP server, and substitutes the elements within the server response with the Module's own predefined elements. These substitute elements leverage the behavior of standard protocols to gain desired device network behavior.",
+      "independent_claims": [
+        {
+          "number": 1,
+          "type": "method",
+          "text": "1. A method for permitting split-routing of network traffic to occur without any changes, modifications or configuration of a requesting host, network stack, network architecture, and routing and forwarding behavior, the method comprising:\npresenting a module residing on a local area network, the module comprising an intercept sub-module, a substitutions sub-module, and a substitutions elements sub-module configured with one or more pre-defined elements, wherein pre-defined elements comprise one or more of a default gateway address of the responding server and a local gateway address associated with a local area network and wherein the module is configured for substituting an IP address of an issuing DHCP server with an IP address of a local terminal and the substitutions elements sub-module is configured to perform the operations of deconstructing, substituting and rebuilding packets of DHCP communications;\nintercepting, by the intercept module, a DHCP communication between a requesting device and a DHCP server;\nsubstituting, by the substitutions sub-module, a network addressing element of the server with the one or more pre-defined elements of the substitutions elements sub-module in the server response;\nforwarding the communication containing the substituted element to the requesting device, thereby facilitating a split tunnel; and\nproviding egress of traffic, wherein traffic is not local to the local area network\nthereby directing traffic through an alternate route and wherein only traffic destined for a native network will traverse the tunnel."
+        },
+        {
+          "number": 5,
+          "type": "medium",
+          "text": "5. A non-transitory computer-readable medium having recorded thereon a program that causes a device to execute a method for enabling substituting network addressing elements, the method comprising:\npresenting a module residing on a local area network, the module comprising an intercept sub-module, a substitutions sub-module, and a substitutions elements sub-module configured with one or more pre-defined elements, wherein pre-defined elements comprise one or more of a default gateway address of the responding server and a local gateway address associated with a local area network and wherein the module is configured for substituting an IP address of an issuing DHCP server with an IP address of a local terminal and the substitutions elements sub-module is configured to perform the operations of deconstructing, substituting and rebuilding packets of DHCP communications;\nintercepting, by the intercept module, a DHCP communication between a requesting device and a DHCP server;\nsubstituting, by the substitutions sub-module, a network addressing element of the server with the one or more pre-defined elements of the substitutions elements sub-module in the server response;\nforwarding the communication containing the substituted element to the requesting device, thereby facilitating a split tunnel; and\nproviding egress of traffic, wherein traffic is not local to the local area network, thereby directing traffic through an alternate route and wherein only traffic destined for a native network will traverse the tunnel."
+        }
+      ],
+      "application_family_members": [
+        "US20140317312A1"
+      ],
+      "simple_family_members": [
+        "US10154005B2",
+        "US10469444B2",
+        "US10659430B2",
+        "US20140317312A1",
+        "US20160323242A1",
+        "US20180183755A1",
+        "US20190036734A1",
+        "US20190068547A1",
+        "US9876757B2"
+      ]
+    },
+    {
+      "number": "US9294434B1",
+      "title": "Connectionless communications",
+      "grant_date": "2016-03-22",
+      "priority_date": "2012-11-09",
+      "expiration": "2033-10-02",
+      "application_number": "13/789590",
+      "assignee_original": "IP Technology Labs, LLC",
+      "assignee_current": "IP Technology Labs LLC",
+      "forward_cites": 3,
+      "top_citing_assignees": [
+        "\u667a\u80fd\u521b\u8c37(\u5317\u4eac)\u79d1\u6280\u6709\u9650\u516c\u53f8 (3)"
+      ],
+      "abstract": "Described are techniques for facilitating automated connections between any two devices a plurality of devices\u2014including applications\u2014across disparate and unsecured networks including the Internet. For example, details about a device or application including its unique identity are managed through a master repository in a protocol-agnostic manner. By requiring hosts in a network to maintain communication (bi-directionally) with the repository, the repository acts as an intelligent-management bridge between different devices and sources.",
+      "independent_claims": [
+        {
+          "number": 1,
+          "type": "method",
+          "text": "1. A method implemented at least partially by a processor, the method comprising:\ncreating a database of unique identifiers (IDs) exclusively associated with a corresponding unique computer device or application, wherein the database provides direct access to a collection of computer device information collected via pre-processed formatted messages, which are accessible without prior knowledge of a computer devices' information, for subsequent processing; and\nsending a formatted message, for storage and use by other processors, computer devices, or applications, each time a device or application communicates with the database, the message from the computer device including a unique ID associated with the computer device or application, and data parameters indicating a status, reachability and connectivity of the computer device or application, wherein communication between computing devices or between computing devices and the database is performed by the computing device independent of proximity of the devices and in a distributed manner of stateless information-exchange requiring no fore-knowledge or assumption of processing state of a computer device's parameters; and\npermitting a plurality of computer devices, applications or unrelated processors to access the stored message and for future retrieval based on the unique ID."
+        },
+        {
+          "number": 4,
+          "type": "medium",
+          "text": "4. A non-transitory computer-readable medium having recorded thereon a program of instructions that causes a computer device to execute a method for facilitating an automated connection between any two devices across disparate and unsecured networks and wherein the connection is not dependent on proximity of computer devices, the method comprising:\ncreating a database of unique identifiers (IDs) exclusively associated with a corresponding unique computer device or application, wherein the database provides access to a collection of computer device information via pre-processed formatted messages, which are accessible without prior knowledge, of a computer devices' information for subsequent processing; and\nsending a formatted message, for storage and use by other processors, computer devices, or applications, each time a device or application communicates with the database, the message from the computer device including a unique ID associated with the computer device or application and data parameters indicating a status, reachability and connectivity of the computer device or application, wherein communication between computing devices or between computing devices and the database is performed by the computing device in a distributed manner of stateless information exchange requiring no fore-knowledge or assumption of the processing state of a computer device's parameters;\npermitting a plurality of computer devices, applications or unrelated processors to access the stored message and for future retrieval based on the unique ID for the computing device;\nlocating, within the database, a unique identifier corresponding to the subject device, and parameters providing a dynamic report of the status of the subject device at a first-time interval, upon receiving a request about a subject device;\ntransmitting the parameters providing a dynamic report of the status of the subject device at a first-time interval to a requesting device; and\nautomatically establishing a communication link between the requesting device and the subject device."
+        }
+      ],
+      "application_family_members": [],
+      "simple_family_members": []
+    },
+    {
+      "number": "US12034800B2",
+      "title": "Systems and methods for automated, controllerless and stateless network connection selection based on distributed server information",
+      "grant_date": "2024-07-09",
+      "priority_date": "2022-09-12",
+      "expiration": "2041-02-24",
+      "application_number": "17/942908",
+      "assignee_original": "IP Technology Labs, LLC",
+      "assignee_current": "IP Technology Labs LLC",
+      "forward_cites": 2,
+      "top_citing_assignees": [
+        "DEPUY MITEK, INC. (2)"
+      ],
+      "abstract": "The invention is that of systems and methods for controllerless and distributed network connections to servers on a network by remote clients seeking their services. The invention comprises a central database where servers within a server group identified by a group name may post unique identifiers (UIDs) for retrieval and reposting by group clients configured with the group name, which may query the central database for server connection information such as uptime, downtime, and congestion in order to select a server for a preferential connection based on an overall posture as determined by the group client. In some embodiments, one server of the group is a \u201cdummy server\u201d that may aggregate and selectively transmit server information from other servers in the group, or other devices, and post it to the central database. The methods described herein eliminate a separate controller and thereby a single point of failure (SPOF).",
+      "independent_claims": [
+        {
+          "number": 1,
+          "type": "system",
+          "text": "1. A system for automated, controllerless and stateless network connection selection, the system comprising:\na central database in direct network communication with a plurality of servers in a server group and a plurality of clients in a client group, wherein each server of the plurality of servers comprises a unique identifier;\nwherein the server group further comprises dummy server having a unique identifier and an aggregation module tangibly stored on a nontransitory computer readable medium, comprising instructions which when executed by a first processor cause the first processor to compile aggregated server connection information comprising the unique identifier, the server connection information for each of the plurality of servers and extrinsic connection information, and transmit the aggregated server connection information to the central database;\na server software module tangibly stored on a nontransitory computer readable medium comprising instructions which when executed by the first processor cause the first processor to:\ntransmit the server connection information for each of the plurality of servers to the central database without any modification or adjudication; and\nselectively transmit the aggregated server connection information to the central database;\n\nwherein each client of the plurality of clients in the client group is configured with a group name for the server group; and\na client software module comprising instructions which when executed by a second processor enables the second processor to acquire the server connection information for each of the plurality of servers and the aggregated server connection information and post either to the central database;\nwherein the server connection information enables each client of the plurality of clients to establish a preferential direct connection with a server in the server group;\nwherein the central database does not reside on any server of the server group, and does not perform any modification or adjudication on the server connection information for each of the plurality of servers or the aggregated server connection information; and\nwherein neither the server connection information for each of the plurality of servers nor the aggregated server connection information is modified or adjudicated by any intermediate device in a communication path between any client of the plurality of clients or any server of the plurality of servers, or the dummy server, and the central database."
+        },
+        {
+          "number": 13,
+          "type": "method",
+          "text": "13. A method for establishing a controllerless connection to a server of a plurality of servers in a server group, the method comprising:\nconfiguring a plurality of clients of a client group with a group name for the server group;\ndetermining the availability of each server of the plurality of servers; and\ncausing a first processor to execute instructions of a client software module of a client configured with the group name, which when executed by the first processor cause the first processor to acquire server connection information of the plurality of servers for preferential direct connection selection by the client from a central database;\nwherein the central database comprises server connection information and a unique identifier for the plurality of servers;\nwherein the server connection information and the unique identifier is posted by\nthe client, wherein when instructions of the client software module are executed by the first processor cause the first processor to modify, update or add meta data to the server connection information of the plurality of servers prior to posting to the central database;\nwherein the central database does not reside on any server of the server group and does not perform any modification or adjudication of the server connection information for the plurality of servers or the aggregated server connection information; and\nwherein neither the server connection information for the plurality of servers nor the aggregated server information is modified or adjudicated by any intermediate device in a communication path between any server of the server group and the central database."
+        }
+      ],
+      "application_family_members": [
+        "US20230007090A1"
+      ],
+      "simple_family_members": [
+        "US20230007090A1"
+      ]
+    },
+    {
+      "number": "US9876757B2",
+      "title": "Systems and methods for dynamic network address modification",
+      "grant_date": "2018-01-23",
+      "priority_date": "2013-02-20",
+      "expiration": "2034-05-25",
+      "application_number": "15/206830",
+      "assignee_original": null,
+      "assignee_current": "IP Technology Labs LLC",
+      "forward_cites": 16,
+      "top_citing_assignees": [
+        "PALO ALTO NETWORKS, INC. (4)",
+        "AMAZON TECHNOLOGIES, INC. (2)",
+        "ANCHORFREE INC. (2)",
+        "AT&AMP;T INTELLECTUAL PROPERTY I, L.P. (2)",
+        "CISCO TECHNOLOGY, INC. (2)",
+        "CITRIX SYSTEMS, INC. (2)",
+        "ELECTRONICS AND TELECOMMUNICATIONS RESEARCH INSTITUTE (2)"
+      ],
+      "abstract": "The invention presented herein permits split-routing to occur without any changes, modifications, or configuration of the requesting host, network stacks, network architectures and routing and forwarding behavior. The invention is carried out by way of a Module that intercepts the normal and standard DHCP communication between a requesting device and a DHCP server, and substitutes the elements within the server response with the Module's own predefined elements. These substitute elements leverage the behavior of standard protocols to gain desired device network behavior.",
+      "independent_claims": [
+        {
+          "number": 1,
+          "type": "method",
+          "text": "1. A method for initiating a direct tunnel between previously unconnected endpoints residing on an otherwise obstructed network path, comprising:\nsending, via a native endpoint configured with a direct connect module, a message comprising identifying information and status information of the native endpoint to a management database;\nsending, via a nonnative endpoint configured with a direct connect module, a message comprising identifying information and status information of the nonnative endpoint to a management database;\nsending, via the management database, a message comprising a unique ID packet of the native endpoint to the nonnative endpoint;\nsending, via the management database, a message comprising a unique ID packet of the nonnative endpoint to the native endpoint;\nupon receiving a nonnative endpoint unique ID, initiating a sequence of outbound communication sessions from a sending native endpoint to the nonnative endpoint;\nupon receiving a native endpoint unique ID, initiating a sequence of outbound communication sessions from a sending nonnative endpoint to the native endpoint;\ndiscovering by the direct connect module a connection between the previously unconnected endpoints upon receiving by the direct connect module the outbound communication from the sending endpoint at a receiving endpoint, wherein the receiving endpoint is one of a nonnative endpoint receiving the outbound communication from the sending native endpoint or a native endpoint receiving the outbound communication from the sending nonnative endpoint;\nsynchronizing by the direct connect module status information between the connected endpoints;\nidentifying the sending endpoint address as a server endpoint and the remaining endpoint as a client endpoint; and\ndisengaging by the direct connect module communication from the management database by the server endpoint and client endpoint, thereby permitting direct endpoint-to-endpoint connectivity and establishing a direct tunnel between the previously unconnected endpoints."
+        },
+        {
+          "number": 2,
+          "type": "medium",
+          "text": "2. A non-transitory computer-readable medium storing computer-readable instructions that, when executed by a processor of a computing device, instruct the processor to perform a method for generating a direct tunnel between endpoints residing on an otherwise obstructed network path, comprising:\nsending, via a native endpoint configured with a direct connect module, a message comprising identifying information and status information of the native endpoint to a management database by the direct connect module;\nsending, via a nonnative endpoint configured with a direct connect module, a message comprising identifying information and status information of the nonnative endpoint to a management database;\nsending, via the management database, a message comprising a unique ID packet of the native endpoint to the nonnative endpoint;\nsending, via the management database, a message comprising a unique ID packet of the nonnative endpoint to the native endpoint;\nupon receiving a nonnative endpoint unique ID, initiating a sequence of outbound communication sessions from a sending native endpoint to the nonnative endpoint;\nupon receiving a native endpoint unique ID, initiating a sequence of outbound communication sessions from a sending nonnative endpoint to the native endpoint;\ndiscovering by the direct connect module a connection between the previously unconnected endpoints upon receiving the outbound communication from the sending endpoint at a receiving endpoint, wherein the receiving endpoint is one of the nonnative endpoint receiving the outbound communication from the sending native endpoint or the native endpoint receiving the outbound communication from the sending nonnative endpoint;\nsynchronizing by the direct connect module status information between the connected endpoints;\nidentifying the sending endpoint address as a server endpoint and the remaining endpoint as a client endpoint; and\ndisengaging communication from the management database by the server endpoint and client endpoint, thereby permitting direct endpoint-to-endpoint connectivity and establishing a direct tunnel between the previously unconnected endpoints."
+        }
+      ],
+      "application_family_members": [
+        "US20160323242A1"
+      ],
+      "simple_family_members": [
+        "US10154005B2",
+        "US10469444B2",
+        "US10659430B2",
+        "US20140317312A1",
+        "US20160323242A1",
+        "US20180183755A1",
+        "US20190036734A1",
+        "US20190068547A1",
+        "US9391881B2"
+      ]
+    },
+    {
+      "number": "US12034799B2",
+      "title": "Systems and methods for automated, controllerless and stateless network connection selection based on distributed server information",
+      "grant_date": "2024-07-09",
+      "priority_date": "2022-09-12",
+      "expiration": "2041-02-24",
+      "application_number": "17/942894",
+      "assignee_original": "IP Technology Labs, LLC",
+      "assignee_current": "IP Technology Labs LLC",
+      "forward_cites": 0,
+      "top_citing_assignees": null,
+      "abstract": "The invention is that of systems and methods for controllerless and distributed network connections to servers on a network by remote clients seeking their services. The invention comprises a central database where servers within a server group identified by a group name may post unique identifiers (UIDs) for retrieval by group clients configured with the group name, which may query the central database for server connection information such as uptime, downtime, and congestion in order to select a server for a preferential connection based on an overall availability profile as determined by the group client. In some embodiments, one server of the group is a \u201cdummy server\u201d that may aggregate and selectively transmit server information from other servers in the group, or other devices, and posts it to the central database for client access. The methods described herein eliminate a separate controller and thereby a single point of failure (SPOF).",
+      "independent_claims": [
+        {
+          "number": 1,
+          "type": "system",
+          "text": "1. A system for automated, controllerless and stateless network connection selection, the system comprising:\na central database in direct network communication with a plurality of servers in a server group and a plurality of clients in a client group, wherein each server of the plurality of servers comprises a unique identifier;\nwherein the server group further comprises dummy server having a unique identifier and an aggregation module tangibly stored on a nontransitory computer readable medium, comprising instructions which when executed by a first processor cause the first processor to compile aggregated server connection information comprising the unique identifier, the server connection information for each of the plurality of servers and extrinsic connection information, and transmit the aggregated server connection information to the central database;\na server software module tangibly stored on a nontransitory computer readable medium comprising instructions which when executed by the first processor cause the first processor to:\ntransmit the server connection information for each of the plurality of servers to the central database without any modification or adjudication; and\nselectively transmit the aggregated server connection information to the central database;\n\nwherein each client of the plurality of clients in the client group is configured with a group name for the server group; and\na client software module comprising instructions which when executed by a second processor cause the second processor to acquire the server connection information for each of the plurality of servers and the aggregated server connection information;\nwherein the server connection information enables each client of the plurality of clients to establish a preferential direct connection with a server in the server group;\nwherein the central database does not reside on any server of the server group, and does not perform any modification or adjudication on the server connection information for each of the plurality of servers or the aggregated server connection information; and\nwherein neither the server connection information for each of the plurality of servers nor the aggregated server connection information is modified or adjudicated by any intermediate device in a communication path between any client of the plurality of clients or any server of the plurality of servers, or the dummy server, and the central database."
+        },
+        {
+          "number": 11,
+          "type": "method",
+          "text": "11. A method for establishing a controllerless connection to a server of a plurality of servers in a server group, the method comprising:\nconfiguring a plurality of clients of a client group with a group name for the server group; and\ncausing a first processor to execute instructions of a client software module of a client configured with the group name, which when executed by the first processor cause the first processor to acquire unmodified and unadjudicated server connection information of one or more selected servers of the plurality of servers for preferential direct connection selection by the client from a central database;\nwherein each server of the plurality of servers is configured with a unique identifier;\nwherein one of the server group comprises dummy server comprising an aggregation module tangibly stored on a nontransitory computer readable medium, comprising instructions which when executed by a second processor cause the second processor to compile aggregated server connection information comprising the unique identifier, server connection information for the plurality of servers and extrinsic server connection information and transmit the aggregated server connection information to the central database;\nthe central database does not reside on any server of the server group and does not perform any modification or adjudication of the server connection information for the plurality of servers or aggregated server connection information; and\nwherein neither the server connection information for the plurality of servers nor the aggregated server information is modified or adjudicated by any intermediate device in a communication path between any client of the plurality of clients or any server of the server group and the central database."
+        }
+      ],
+      "application_family_members": [
+        "US20230007091A1"
+      ],
+      "simple_family_members": [
+        "US20230007091A1"
+      ]
+    },
+    {
+      "number": "US10154005B2",
+      "title": "System and methods for direct connections between previously unconnected network devices across one or more unknown networks",
+      "grant_date": "2018-12-11",
+      "priority_date": "2013-02-20",
+      "expiration": "2034-05-25",
+      "application_number": "15/875978",
+      "assignee_original": null,
+      "assignee_current": "IP Technology Labs LLC",
+      "forward_cites": 14,
+      "top_citing_assignees": [
+        "PALO ALTO NETWORKS, INC. (4)",
+        "AMAZON TECHNOLOGIES, INC. (2)",
+        "ANCHORFREE INC. (2)",
+        "AT&AMP;T INTELLECTUAL PROPERTY I, L.P. (2)",
+        "CISCO TECHNOLOGY, INC. (2)",
+        "CITRIX SYSTEMS, INC. (2)",
+        "ELECTRONICS AND TELECOMMUNICATIONS RESEARCH INSTITUTE (2)"
+      ],
+      "abstract": "The invention presented herein is a system and method for automatically discovering communication capabilities for direct communication between endpoints across one or more unknown networks, the system comprising: a plurality of network enabled endpoints configured with a module in wireless communication with a management database, the module configured to establish a communication path for direct communication between the network-enabled endpoints, independent of a NAT router. Also disclosed is a system and method for indirect connectionless bi-directional messaging over an unknown network infrastructure for communicating a message communication between a querying device and a database, wherein communication is enabled without the requirement for direct access to the database for either obtaining or placing information; and where the message communication comprises an unlimited amount of discreet and selectable information elements; and without requiring or issuing a direct acknowledgement of a receipt from the database of the communication message received.",
+      "independent_claims": [
+        {
+          "number": 1,
+          "type": "system",
+          "text": "1. A system configured for automatically discovering communication capabilities for direct communication between endpoints across one or more unconnected networks, the system comprising:\na plurality of network-enabled endpoints configured with a module, which includes at least one processor, in network communication with a management database,\nthe module configured to establish a communication path for direct communication between the network-enabled endpoints, independent of a network address translation; wherein the module is configured for performing a set of operations, comprising:\nassessing the network to discover behavioral traits of a network address translation device of a network associated with the endpoints,\ncomprising: identifying one of the endpoints;\nassessing a number of hops;\nsending a plurality of data packets across a range of ports to a server;\ndiscovering port information of the endpoints based on the data packets and sending port information to the server;\npermitting the endpoints to exchange information received on the server regarding an endpoint; and\nperforming an iterative operational cycle until establishing a connection path between two previously unconnected endpoints, the operation cycle comprising: determining if one endpoint is located in a network that allows a connection to a device on an available port\na port mapping operation comparing sending a series of data packets, sent from one endpoint in incremental ports upwards and in reverse from another endpoint in incremental ports downwards to if determine whether the data packets intersect on a port,\nsynchronizing the endpoints on a single port, so that the incoming data packets appear to be in response to the outgoing packet,\nallowing a hand-off to occur between the endpoints; and\ncompleting a time-to-live manipulation operation comprising:\nutilizing the number of hops required to get from a local network to the server,\ndefining and sending data packets from the local network to the server with a first set of data packets having a manipulated time-to-live,\ncausing the data packets to be dropped in transit and to allow the network address translation device to see outgoing traffic and open data paths in the network address translation device, and\nin turn establishing, based on the open data paths in the address translation device, a value within a preset range thereby allowing packet transmission from both ends."
+        },
+        {
+          "number": 2,
+          "type": "method",
+          "text": "2. A method for establishing direct communication between previously unconnected network-enabled endpoints, comprising:\ncausing a processor stored on at least one of the unconnected endpoints to establish a direct communication path between the endpoints by;\nassessing the network to discover behavioral traits of a network address translation device of a network associated with the endpoints by;\nidentifying one of the endpoints;\nassessing a number of hops;\nsending a plurality of data packets across a range of ports to a server;\ndiscovering port information of the endpoints based on the data packets and sending port information to the server;\npermitting the endpoints to exchange information received on the server regarding an endpoint; and\nperforming an iterative operational cycle until establishing a connection path between two previously unconnected endpoints, the operation cycle comprising:\ndetermining if one endpoint is located in a network that allows a connection to a device on an available port;\na port mapping operation comparing sending a series of data packets, sent from one endpoint in incremental ports upwards and in reverse from another endpoint downwards to determine whether the data packets intersect on a port;\nsynchronizing the endpoints on a single port, so that the incoming data packets appear to be in response to the outgoing packet;\nallowing a hand-off to occur between the endpoints; and\ncompleting a time-to-live manipulation operation comprising:\nutilizing the number of hops required to get from a local network to the server;\ndefining and sending data packets from the local network to the server with a first set of data packets having a manipulated time-to-live;\ncausing the data packets to be dropped in transit and allow the network address translation device to see outgoing traffic and open data paths in the network address translation device; and\nin turn establishing, based on open data paths in the network address translation device, a value within a preset range thereby allowing packet transmission from both ends."
+        }
+      ],
+      "application_family_members": [
+        "US20180183755A1"
+      ],
+      "simple_family_members": [
+        "US10469444B2",
+        "US10659430B2",
+        "US20140317312A1",
+        "US20160323242A1",
+        "US20180183755A1",
+        "US20190036734A1",
+        "US20190068547A1",
+        "US9391881B2",
+        "US9876757B2"
+      ]
+    }
+  ]
+}
